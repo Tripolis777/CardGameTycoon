@@ -52,4 +52,4 @@ MonoBehaviour:
   _gameScoreController: {fileID: 5769929693173526561, guid: edf467e4b8b0d4b74acb448fe2e3f84c, type: 3}
   _startMenuPrefab: {fileID: 5809015610728346985, guid: 02f42b84790db7343a24e45fbf913f2e, type: 3}
   _chooseTeamPrefab: {fileID: 3210038960453056760, guid: 7f30b09c263de694c9fe73438ee356c9, type: 3}
-  _endGamePrefab: {fileID: 0}
+  _endGamePrefab: {fileID: 818048626230026314, guid: 354652dc2cd040946aca4ef375d2c9f6, type: 3}

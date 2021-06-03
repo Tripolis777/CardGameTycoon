@@ -14,14 +14,15 @@ namespace DefaultNamespace
         [SerializeField] private Text _designPercent;
         [SerializeField] private Text _bugsCount;
         [SerializeField] private int _startCash;
+        [SerializeField] private Button _endButton;
         
         private int _featureScore;
         private int _designScore;
         private int _bugsScore;
         private int _cash;
 
-        public int FeatureCompletePoints = 10;
-        public int DesignCompletePoints = 30;
+        public int FeatureCompletePoints = 12;
+        public int DesignCompletePoints = 100;
 
         public static GameScoreController Instance { get; private set; }
         
@@ -73,7 +74,29 @@ namespace DefaultNamespace
         private void Awake()
         {
             Instance = this;
-            Cash = _startCash;
+            _endButton.onClick.AddListener(OnClickButtonEnd);
+            
+            var state = GameController.Instance.PlayerState;
+            state.BugsCount = 0;
+            state.DesignCount = 0;
+            state.FeatureCount = 0;
+            Cash = state.Cash;
+        }
+
+        private void OnDestroy()
+        {
+            _endButton.onClick.RemoveListener(OnClickButtonEnd);
+        }
+
+        private void OnClickButtonEnd()
+        {
+            var state = GameController.Instance.PlayerState;
+            state.BugsCount = BugsScore;
+            state.DesignCount = DesignScore;
+            state.FeatureCount = FeatureScore / FeatureCompletePoints;
+            state.Cash = Cash;
+
+            GameController.Instance.State = GameState.End;
         }
     }
 }

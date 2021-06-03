@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4e8aaab4724935ae227b8468ded5fc, type: 3}
   m_Name: BugFixingCard
   m_EditorClassIdentifier: 
-  Name: Big Fixing
+  Name: Bug Fixing
   Description: "\u0424\u0438\u043A\u0441\u0438\u043D\u0433 \u0431\u0430\u0433\u043E\u0432"
   Icon: {fileID: 21300000, guid: 570018e27fa24c34091ab0bbdcff209b, type: 3}
   FeatureScore: -3

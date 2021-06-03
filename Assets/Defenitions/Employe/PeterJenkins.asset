@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370f5b92c1a4487f8a4c6ba5cd231c86, type: 3}
   m_Name: PeterJenkins
   m_EditorClassIdentifier: 
-  Name: Peter Jenkins
+  Name: "\u041F\u0435\u0442\u044C\u043A\u0430 \u041F\u0440\u043E\u0433\u0435\u0440"
   Avatar: {fileID: 21300000, guid: 5ab3ae42b8200aa4d930808da726bba8, type: 3}
   Cards:
   - {fileID: 11400000, guid: 6052374451c7643ceaf36d19a76315b4, type: 2}
